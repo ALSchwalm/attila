@@ -327,6 +327,29 @@ th {
     src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("//fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2") format("woff2"), url("//fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOqRDOzjiPcYnFooOUGCOsRk.woff") format("woff")
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 .hljs {
     display: block;
     color: #66645c;
@@ -469,7 +492,10 @@ html.menu-active,
 }
 
 body {
-    font: 400 2em / 1.5em 'Cardo', serif;
+    font-family: "Merriweather", serif;
+    line-height: 1.5em;
+    font-size: 2em;
+    font-weight: 400;
     color: #45484d;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -672,8 +698,8 @@ mark {
 code,
 tt {
     position: relative;
-    margin: 0 0.333em;
-    padding: 0.333em 0.666em;
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
     font-family: 'Inconsolata', monospace, sans-serif;
     font-size: 0.75em;
     white-space: pre;
@@ -719,8 +745,8 @@ pre code,
 pre tt {
     position: static;
     top: auto;
-    margin: -1.333em -1.333em -1.333em 1.333em;
-    padding: 1.333em;
+    margin: 0;
+    padding: 0;
     overflow: scroll;
     font-size: 0.75em;
     line-height: 2em;
@@ -906,7 +932,7 @@ img {
 }
 
 .home-template .blog-name {
-    font-size: 3em
+    font-size: 5rem;
 }
 
 .has-cover .blog-name {
@@ -930,7 +956,7 @@ img {
 }
 
 .home-template .blog-description {
-    font-size: 1.5em
+    font-size: 2rem;
 }
 
 .has-cover .blog-description {
@@ -968,7 +994,7 @@ img {
 }
 
 .inner {
-    max-width: 32em;
+    max-width: 36em;
     margin: 0 auto;
     padding: 0 2em
 }
@@ -1442,13 +1468,6 @@ img {
 .post-content a:hover,
 .post-content a:focus {
     color: #f26a3d
-}
-
-.post-content img,
-.post-content .fluid-width-video-wrapper {
-    max-width: none;
-    width: 110%;
-    margin-left: -5%
 }
 
 .post-info {
